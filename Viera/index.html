@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicativos I</title>
+</head>
+<body>
+    <header><h1>APLICATIVOS 1</h1></header>
+    <nav>
+        <ul>
+            <a href="index.html">Aula 1</a>
+            <a href="aula2.html">Aula 2</a>
+            <a href="aula3.html">Aula 3</a>
+            <a href="aula4.html">Aula 4</a>
+        </ul>
+    </nav>
+    <main>
+        <h1>AULA 1</h1>
+
+            <div>
+                <h2>HTML</h2>
+                <p>HyperText Markup Language (linguagem de marcação de hipertexto). Hipertexto 
+                    se refere aos links que conectam páginas web entre si, seja dentro de um 
+                    único site ou fora dele. A marcação é usada para denotar textos, imagens e
+                    outros conteúdos para exibição em um navegador web.
+                </p>
+                <p>Cada marcação é representada por elementos (tags) como o <im>&lthead&gt, 
+                    &ltbody&gt, &ltheader&gt, &ltfooter&gt, &ltimg&gt</im>, entre outros.
+                </p>
+            </div>
+
+            <div>
+                <h3>Estrutura Básica</h3>
+                <p>
+                    <p>
+                        <mark>&lt!DOCTYPE html&gt</mark> não é uma tag, mas sim uma declaração informando ao navegador
+                        o tipo/versão do html utilizada no arquivo. Neste caso, é o HTML 5.
+                    </p>
+                    <p>
+                        <mark>&lthtml&gt ... &lt/html&gt</mark> especifica o início e fim da estrutura HTML.
+                    </p>
+                    <p>
+                        <mark>&lthead&gt ... &lt/head&gt</mark> é o cabeçalho da página, isto é, informações a serem lidas
+                        pelo navegador ou buscadores web. Contém:
+                    </p>
+                    <p>
+                        ● Meta tags &ltmeta&gt que auxiliam os mecanismos de busca a encontrarem o
+                        nosso site.
+                        <br/>
+                        ● Título da página &lttitle&gt ... &lt/title&gt
+                        <br/>
+                        ● Links &ltlink&gt a arquivos externos essenciais ao site (arquivos CSS,
+                        scripts, fontes, etc.)
+                        <br/>
+                    </p>
+                    <p>
+                        <mark>&ltbody&gt ... &lt/body&gt</mark> que contém todos os elementos do corpo da página a mostrar
+                    ao usuário
+                    </p>
+                </p>
+            </div>
+
+            <div>
+                <h3> HTML - Texto </h3>
+                <p>
+                    <p>
+                        <mark>&ltcode&gt ... &lt/code&gt</mark> indica que o texto é um código e altera sua formatação:<br/>
+                        &ltp&gtEm JavaScript, as constantes são declaradas usando a seguinte sintaxe:<br/> &lt/p&gt
+                        &ltcode&gt const aliquota = 20.00; &lt/code&gt<br/>
+                    </p>
+                    <p>
+                        Saída no navegador:<br/>
+                    </p>
+                    <p>
+                        Em JavaScript, as constantes são declaradas usando a seguinte sintaxe:
+                        <code>const aliquota = 20.00;</code><br/>
+                        <mark>&ltmark&gt ... &lt/mark&gt</mark> destaca o texto, possuindo o efeito semelhante ao marca-texto:<br/>
+                        &ltp&gtJavaScript é uma linguagem de programação interpretada utilizada na parte &ltmark&gtfront end&lt/mark&gt da
+                        aplicação web.&lt/p&gt<br/>
+                    </p>
+                    <p>
+                    Saída no navegador:
+                    </p>
+                    <p>
+                    JavaScript é uma linguagem de programação interpretada utilizada na parte <mark>front end</mark> da aplicação web.<br/>
+                    </p>
+                </p>
+                <p>
+                    &ltblockquote&gt ... &lt/blockquote&gt indica que o texto é uma citação aplicando um recuo para a direita:
+                    &ltp&gtSegundo Steve Jobs ao falar com John Sculley, presidente da Pepsi antes de ser contratado pela
+                    própria Apple: &lt/p&gt
+                    &ltblockquote&gt“Algumas pessoas acham que foco significa dizer sim para a coisa em que você vai se focar.
+                    Mas não é nada disso. Significa dizer não às centenas de outras boas ideias que existem. Você precisa
+                    selecionar cuidadosamente.”&lt/blockquote&gt
+                    <p>Saída no navegador:</p>
+                    <p>
+                        <p>Segundo Steve Jobs ao falar com John Sculley, presidente da Pepsi antes de ser contratado pela
+                        própria Apple: </p>
+                        <blockquote>“Algumas pessoas acham que foco significa dizer sim para a coisa em que você vai se focar.
+                        Mas não é nada disso. Significa dizer não às centenas de outras boas ideias que existem. Você precisa
+                        selecionar cuidadosamente.”</blockquote>
+                    </p>
+                </p>
+            </div>
+
+            <div>
+                <h3> HTML - Imagens </h3>
+                <p>
+                    <p>
+                    <mark>&ltimg ... /&gt</mark> indica que o elemento é uma imagem. Possui os atributos src
+                        (endereço da imagem/arquivo), width (largura), height (altura), title
+                        (texto acessível quando posiciona o mouse em cima da imagem), alt (texto
+                        alternativo mostrado quando não é possível carregar a imagem), entre
+                        outros.
+                    </p>
+                    <p>
+                        <mark>&ltfigure> ... &lt/figure></mark> usada para organizar e agrupar ilustrações,
+                        diagramas, imagens, vídeos, gráficos, entre outros elementos.
+                    </p>
+                    <p>
+                        <mark>&ltfigcaption> ... &lt/figcaption></mark> usada em conjunto com a tag figure, indica
+                        a legenda da ilustração em questão.
+                    </p>
+                </p>
+                <h4>Exemplo</h4>
+                <p>
+                    &ltfigure>
+                        &ltimg src="estudos.jpg" alt="Estudos" width="150" height="140" />
+                        &ltfigcaption>Estudos Intensivos em Web&lt/figcaption>
+                    &lt/figure>
+                </p>
+                <p>
+                    Saída no navegador:
+                </p>
+                <figure>
+                    <img src="../imagens/estudos.jpg" alt="Estudos" width="150" height="140" />
+                    <figcaption>Estudos Intensivos em Web</figcaption>
+                </figure>
+            </div>
+
+            <div>
+                <h3>HTML - Audio e Vídeo</h3>
+                <p>
+                    <p>
+                        <mark>&ltaudio> ... &lt/audio></mark> indica que o elemento é um áudio.
+                    </p>
+                    <p>
+                        <mark>&ltvideo> ... &lt/video></mark> indica que o elemento é um vídeo.
+                    </p>
+                    <p>
+                        <mark>&ltsource ... /></mark> é uma tag auxiliar de vídeo e áudio, e indica o arquivo da
+                        mídia.
+                    </p>
+                    <p>
+                        Tanto a tag audio como a tag video possuem os atributos src (endereço do
+                        vídeo/arquivo), width (largura), height (altura), type (tipo do
+                        arquivo), autoplay (especifica se ao carregar a página o vídeo será
+                        executado), controls (exibe a barra de controle), entre outros.
+                    </p>
+                </p>
+                <h4>Exemplo:</h4>
+                <p>
+                    <p>
+                        &ltvideo width="300" height="200" controls="controls" autoplay="autoplay">
+                        &ltsource src="cobra.mp4" type="video/mp4">
+                        &lt/video>
+                    </p>
+                    <p>
+                        &ltbr/>&ltbr/>
+                    </p>
+                    <p>
+                        &ltaudio controls="controls" autoplay="autoplay">
+                        &ltsource src="zoo.mp3" type="audio/mp3">
+                        &lt/audio>
+                    </p>
+                    <p> Saída no navegador:</p>
+                </p>
+                <video width="300" height="200" controls="controls">
+                <source src="../imagens/GLG.mp4" type="video/mp4">
+                </video>
+                <br/><br/>
+                <audio controls="controls">
+                <source src="../imagens/GLG.mp3" type="audio/mp3">
+                </audio>
+            </div>
+
+            <div>
+                <h3> HTML - Blocos</h3>
+                <p>
+                    <p>
+                        <mark>&ltsection> ... &lt/section></mark> dentro do conteúdo principal, compreende uma seção da página.
+                    </p>
+                    <p>
+                        <mark>&ltarticle> ... &lt/article></mark> indica um artigo na página - muito utilizado em blogs e sites de criação de
+                        conteúdo.
+                    </p>
+                    <p>
+                        <mark>&ltaside> ... &lt/aside></mark> se refere a uma seção com outro conteúdo da página (lateral), como uma explicação,
+                        avisos, conteúdos complementares.
+                    </p>
+                    <p>
+                        <mark>&ltdiv> ... &lt/div></mark> indica um container genérico e não tem valor semântico - é apenas uma divisão na página
+                        para fins quaisquer. Pode ser usado em qualquer local da página.
+                    </p>
+                </p>
+            </div>
+    </main>
+</body>
+</html>
