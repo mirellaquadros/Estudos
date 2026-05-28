@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <header><h1>APLICATIVOS 1</h1></header>
+    <main>
+        <h1>AULA 1</h1>
+            <h2>HTML</h2>
+            <p>HyperText Markup Language (linguagem de marcação de hipertexto). Hipertexto 
+                se refere aos links que conectam páginas web entre si, seja dentro de um 
+                único site ou fora dele. A marcação é usada para denotar textos, imagens e
+                outros conteúdos para exibição em um navegador web.
+            </p>
+            <p>Cada marcação é representada por elementos (tags) como o <im>&lthead&gt, 
+                &ltbody&gt, &ltheader&gt, &ltfooter&gt, &ltimg&gt</im>, entre outros.
+            </p>
+            
+            <h3>Estrutura Básica</h3>
+            <p>
+                <mark>&lt!DOCTYPE html&gt</mark> não é uma tag, mas sim uma declaração informando ao navegador
+                o tipo/versão do html utilizada no arquivo. Neste caso, é o HTML 5.<br/>
+                <mark>&lthtml&gt ... &lt/html&gt</mark> especifica o início e fim da estrutura HTML.<br/>
+               <mark>&lthead&gt ... &lt/head&gt</mark> é o cabeçalho da página, isto é, informações a serem lidas
+                pelo navegador ou buscadores web. Contém:
+                <br/>
+                ● Meta tags &ltmeta&gt que auxiliam os mecanismos de busca a encontrarem o
+                nosso site.
+                <br/>
+                ● Título da página &lttitle&gt ... &lt/title&gt
+                <br/>
+                ● Links &ltlink&gt a arquivos externos essenciais ao site (arquivos CSS,
+                scripts, fontes, etc.)
+                <br/>
+                <mark>&ltbody&gt ... &lt/body&gt</mark> que contém todos os elementos do corpo da página a mostrar
+                ao usuário
+            </p>
+            <h3> HTML - Texto </h3>
+            <p>
+                <mark>&ltcode&gt ... &lt/code&gt</mark> indica que o texto é um código e altera sua formatação:<br/>
+                &ltp&gtEm JavaScript, as constantes são declaradas usando a seguinte sintaxe:<br/> &lt/p&gt
+                &ltcode&gt const aliquota = 20.00; &lt/code&gt<br/>
+                Saída no navegador:<br/>
+                Em JavaScript, as constantes são declaradas usando a seguinte sintaxe:
+                <code>const aliquota = 20.00;</code><br/>
+                <mark>&ltmark&gt ... &lt/mark&gt</mark> destaca o texto, possuindo o efeito semelhante ao marca-texto:<br/>
+                &ltp&gtJavaScript é uma linguagem de programação interpretada utilizada na parte &ltmark&gtfront end&lt/mark&gt da
+                aplicação web.</p><br/>
+                Saída no navegador:<br/>
+                JavaScript é uma linguagem de programação interpretada utilizada na parte <mark>front end</mark> da aplicação web.<br/>
+            </p>
+            <p>
+                &ltblockquote&gt ... &lt/blockquote&gt indica que o texto é uma citação aplicando um recuo para a direita:
+                &ltp&gtSegundo Steve Jobs ao falar com John Sculley, presidente da Pepsi antes de ser contratado pela
+                própria Apple: &lt/p>
+                <blockquote>“Algumas pessoas acham que foco significa dizer sim para a coisa em que você vai se focar.
+                Mas não é nada disso. Significa dizer não às centenas de outras boas ideias que existem. Você precisa
+                selecionar cuidadosamente.”</blockquote>
+                <p>
+                    <p>Segundo Steve Jobs ao falar com John Sculley, presidente da Pepsi antes de ser contratado pela
+                    própria Apple: </p>
+                    <blockquote>“Algumas pessoas acham que foco significa dizer sim para a coisa em que você vai se focar.
+                    Mas não é nada disso. Significa dizer não às centenas de outras boas ideias que existem. Você precisa
+                    selecionar cuidadosamente.”</blockquote>
+                </p>
+            </p>
+
+
+        <form action="" method="GET">
+            <div>
+                <h1> AULA 2 </h1>
+            <fieldset>
+                <legend>Básico</legend>
+                <label for="nome">Nome: </label>
+                <input type="text" name="nome" id="nome" placeholder="Digite o seu nome completo" />
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email" placeholder="Digite seu email"/>
+            </fieldset>
+            </div>
+            <div>
+            <fieldset>
+                <legend>Específico</legend>
+                <label for="dataNascimento">Data de Nascimento: </label>
+                <input type="date" name="dataNascimento" id="dataNascimento"/> <br/>
+                <label for="idade">Idade: </label>
+                <input type="number" name="idade" id="idade"/> <br/>
+                <label for="telefone">Telefone: </label>
+                <input type="tel" name="telefone" id="telefone"/> 
+            </fieldset>
+            </div>
+            <input type="submit" name="submeter" value="Enviar" class="botao"/>
+        </form>
+    </main>
+</body>
+</html>
