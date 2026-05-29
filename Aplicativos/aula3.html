@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aplicativos I</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>APLICATIVOS 1</h1>
+        </header>
+        <nav>
+            <ul>
+                <a href="index.html">Aula 1</a>
+                <a href="aula2.html">Aula 2</a>
+                <a href="aula3.html">Aula 3</a>
+                <a href="aula4.html">Aula 4</a>
+            </ul>
+        </nav>
+
+            <h2>Tabelas</h2>
+
+            <p>
+                <mark>&lttable> ... &lt/table></mark> declara uma tabela.<br/><br/>
+                <mark>&ltcaption> ... &lt/caption></mark> indica o título da tabela.<br/><br/>
+                <mark>&ltthead> ... &lt/thead></mark> declara os nomes das colunas, isto é, o topo da tabela.<br/><br/>
+                <mark>&lttbody> ... &lt/tbody></mark> declara o corpo da tabela - registros.<br/><br/>
+                <mark>&lttfoot> ... &lt/tfoot></mark> declara o rodapé da tabela.<br/><br/>
+                <mark>&lttr> ... &lt/tr></mark> define a linha de uma tabela.<br/><br/>
+                <mark>&ltth> ... &lt/th></mark> define a coluna dentro do header da tabela - thead.<br/><br/>
+                <mark>&lttd> ... &lt/td></mark> define a coluna dentro do corpo e rodapé da tabela - tbody e tfoot.<br/><br/>
+                <mark>cellspacing:</mark> é um atributo da tag table que especifica o espaço entre as células.<br/><br/>
+                <mark>cellpadding:</mark> é outro atributo da tag table que especifica o espaço entre a
+                extremidade da célula e seu conteúdo - margem interna.<br/><br/>
+                <mark>border:</mark> é um atributo que especifica a borda do elemento, seja ele a tabela, a
+                coluna, linha ou a célula.<br/>
+                Obs.: Seguindo o padrão web e boas práticas, toda e qualquer estilização tem que ser
+                feita através de estilos CSS. Sendo assim, a partir do HTML 5, esse atributo não é
+                mais usado.<br/><br/>
+                <mark>colspan:</mark> é um atributo que especifica a mesclagem de células por colunas.<br/><br/>
+                <mark>rowspan:</mark> é um atributo que especifica a mesclagem de células por linhas.
+            </p>
+
+            <h3>Exemplo:</h3>
+            <p>
+                <code>
+                    &lttable cellspacing="5" cellpadding="6"><br/>
+                    &ltcaption>Alunos do curso de Programação do Lab. Energia Criativa do INOVA-Bauru&lt/caption><br/>
+                    &ltthead><br/>
+                    &lttr><br/>
+                    &ltth>ID&lt/th><br/>
+                    &ltth>NOME&lt/th><br/>
+                    &ltth>EMAIL&lt/th><br/>
+                    &lt/tr><br/>
+                    &lt/thead><br/>
+                    &lttbody><br/>
+                    &lttr><br/>
+                    &lttd>1&lt/td><br/>
+                    &lttd>Rubens&lt/td><br/>
+                    &lttd>rubens@gmail.com&lt/td><br/>
+                    &lt/tr><br/>
+                    &lttr><br/>
+                    &lttd>2&lt/td><br/>
+                    &lttd>Antonieta&lt/td><br/>
+                    &lttd>antonieta@gmail.com&lt/td><br/>
+                    &lt/tr><br/>
+                    &lt/tbody><br/>
+                    &lttfoot><br/>
+                    &lttr><br/>
+                    &lttd colspan="3" rowspan="1">Fonte: INOVA-Bauru&lt/td><br/>
+                    &lt/tr><br/>
+                    &lt/tfoot><br/>
+                    &lt/table>
+                </code>
+            </p>
+
+            <p>
+                <strong>Saída no navegador:</strong>
+            </p>
+            
+            <table cellspacing="5" cellpadding="6">
+                <caption>Alunos do curso de Programação do Lab. Energia Criativa do INOVA-Bauru</caption>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>NOME</th>
+                        <th>EMAIL</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Rubens</td>
+                        <td>rubens@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Antonieta</td>
+                        <td>antonieta@gmail.com</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3" rowspan="1"></td>
+                    </tr>
+                </tfoot>
+            </table>
+    </body>
+</html>

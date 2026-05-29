@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aplicativos I</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header><h1>APLICATIVOS 1</h1></header>
+        <nav>
+            <ul>
+                <a href="index.html">Aula 1</a>
+                <a href="aula2.html">Aula 2</a>
+                <a href="aula3.html>">Aula 3</a>
+                <a href="aula4.html>">Aula 4</a>
+            </ul>
+        </nav>
+        <main>
+            <h2>Formulários</h2>
+            <div>
+                <p>
+                    <mark>&ltform> ... &lt/form></mark> indica um formulário, e tem os atributos action (indica o arquivo que
+                    vai processar os dados), method (método de requisição - GET ou POST), entre outros.<br/><br/>
+                    <mark>&ltfieldset> ... &lt/fieldset></mark> declara um conjunto de campos.<br/>
+                    <mark>&ltlegend> ... &lt/legend></mark> indica ao formulário uma legenda para o conjunto de campos.<br/><br/>
+                    <mark>&ltlabel> ... &lt/label></mark> indica um rótulo ao campo referenciado (por meio do atributo for com
+                    o ID do campo).<br/><br/>
+                    <mark>&ltinput .../></mark> declara um campo, podendo ser do tipo texto (<span>type="text"</span>), numérico
+                    (<span>type="number"</span>), de email (<span>type="email"</span>), de data (<span>type="date"</span>), de telefone
+                    (<span>type="tel"</span>), de senha (<span>type="password"</span>), entre outros. Pode possuir também os atributos
+                    <span>name</span> (nome do campo), <span>id</span> (identificação do campo na aplicação), <span>value</span> (valor do campo),
+                    <span>placeholder</span> (dica de preenchimento do campo), entre outros.
+                </p>
+            </div>
+            <div>
+                <p>
+                    <mark>Botões:</mark> existem diferentes formas de criar botões, podendo ser:<br/><br/>
+                    <mark>&ltinput type="submit" value="Enviar" /></mark> indica um botão que ao clicá-lo, submete os dados
+                    do formulário para o processamento (arquivo indicado no atributo action do form). Nesse
+                    caso, o atributo value é o texto a aparecer no botão.<br/><br/>
+                    <mark>&ltinput type="button" value="Enviar" /></mark> indica um botão que ao clicá-lo, não submete os
+                    dados por padrão, sendo preciso implementar essa ação. O atributo value também é o texto
+                    a aparecer no botão.<br/><br/>
+                    <mark>&ltbutton type="submit">Enviar&lt/button></mark> também indica um botão que ao clicá-lo, submete os
+                    dados do formulário para o processamento. O texto a aparecer no botão fica declarado
+                    entre suas tags de abertura e fechamento.<br/><br/>
+                    <mark>&ltbutton type="button">Enviar&lt/button></mark> indica um botão que ao clicá-lo, não submete os
+                    dados por padrão, sendo preciso implementar essa ação. E o texto a aparecer no botão
+                    também fica declarado entre suas tags de abertura e fechamento.
+                </p>
+            </div>
+            <div>
+                <h3>Exemplo:</h3>
+                    <p>
+                        <code>
+                            &lth3>Dados do usuário:&lt/h3><br/>
+                                &ltform action="" method="GET"><br/>
+                                &ltfieldset><br/>
+                                &ltlegend>Básico&lt/legend><br/>
+                                &ltlabel for="nome">Nome: &lt/label><br/>
+                                &ltinput type="text" name="nome" id="nome" placeholder="Digite o seu primeiro nome completo" /><br/>
+                                &ltbr/><br/>
+                                &ltlabel for="email">Email:&lt/label><br/>
+                                &ltinput type="email" name="email" id="email" placeholder="Digite o seu email" /><br/>
+                                &lt/fieldset><br/>
+                                &ltfieldset><br/>
+                                &ltlegend>Específico&lt/legend><br/>
+                                &ltlabel for="dataNascimento">Data de Nascimento: &lt/label><br/>
+                                &ltinput type="date" name="dataNascimento" id="dataNascimento" /> &ltbr/><br/>
+                                &ltlabel for="idade">Idade: &lt/label><br/>
+                                &ltinput type="number" name="idade" id="idade" /> &ltbr/><br/>
+                                &ltlabel for="telefone">Telefone: &lt/label><br/>
+                                &ltinput type="tel" name="telefone" id="telefone" /><br/>
+                                &lt/fieldset><br/>
+                                &ltinput type="submit" name="submeter" value="Submeter" class="botao" /><br/>
+                                &lt/form>
+                        </code>
+                    </p>
+                    <p>
+                        <strong>Saída no navegador</strong>
+                    </p>
+            </div>
+            <div>
+                <form action="" method="GET">
+                        <div>
+                        <fieldset>
+                            <legend>Básico</legend>
+                            <label for="nome">Nome: </label>
+                            <input type="text" name="nome" id="nome" placeholder="Digite o seu nome completo" />
+                            <label for="email">Email: </label>
+                            <input type="email" name="email" id="email" placeholder="Digite seu email"/>
+                        </fieldset>
+                        </div>
+                        <div>
+                        <fieldset>
+                            <legend>Específico</legend>
+                            <label for="dataNascimento">Data de Nascimento: </label>
+                            <input type="date" name="dataNascimento" id="dataNascimento"/> <br/>
+                            <label for="idade">Idade: </label>
+                            <input type="number" name="idade" id="idade"/> <br/>
+                            <label for="telefone">Telefone: </label>
+                            <input type="tel" name="telefone" id="telefone"/> 
+                        </fieldset>
+                        </div>
+                        <input type="submit" name="submeter" value="Enviar" class="botao"/>
+                </form>
+            </div>
+            <div>
+                <p>
+                    <mark>Outros tipos de campos:</mark>
+                    <mark>&lttextarea&lt/textarea></mark> indica um campo de texto livre, isto é, de múltiplas linhas.
+                    Tem os atributos: <span>name</span> (nome), <span>id</span> (identificação na aplicação), <span>rows</span> (quantidade de
+                    linhas), cols (colunas - largura do campo).
+                    <mark>&ltinput type="radio" value="1" /></mark> indica botões (<span>radio buttons</span>) onde somente é
+                    possível selecionar uma opção. O atributo <span>value</span> é o valor da seleção.
+                    <mark>&ltinput type="checkbox" value="opcao1" /></mark> indica botões (caixas de seleção) onde é
+                    possível selecionar uma ou várias opções. O atributo <span>value</span> é o valor da opção.
+                    <mark>&ltselect> ... &lt/select></mark> indica uma caixa de seleção, podendo selecionar somente uma
+                    opção. As opções são declaradas através da tag <span>&ltoption value="10"> ... &lt/option></span>, onde
+                    <span>value</span> é o valor da opção.
+                </p>
+            </div>
+            <div>
+                <h3>Exemplo:</h3>
+                <code>
+                        &ltform action="" class="form2"><br/>
+                        &ltlabel for="resumo">Resumo: &lt/label> &ltbr><br/>
+                        &lttextarea name="resumo" id="resumo" cols="30" rows="10">&lt/textarea><br/>
+                        &ltdiv><br/>
+                        &ltfieldset><br/>
+                        &ltlegend>Faixas de idade &lt/legend><br/>
+                        &ltinput type="radio" name="faixa-idade" id="faixa-idade-1"> &ltlabel for="faixa-idade-1">Idade entre 0 e 18 anos &lt/label> &ltbr><br/>
+                        &ltinput type="radio" name="faixa-idade" id="faixa-idade-2"> &ltlabel for="faixa-idade-2">Idade entre 19 e 34 anos &lt/label> &ltbr><br/>
+                        &ltinput type="radio" name="faixa-idade" id="faixa-idade-3"> &ltlabel for="faixa-idade-3">Idade entre 35 e 54 anos &lt/label> &ltbr><br/>
+                        &ltinput type="radio" name="faixa-idade" id="faixa-idade-4"> &ltlabel for="faixa-idade-4">Idade maior que 55 &lt/label> &ltbr><br/>
+                        &lt/fieldset><br/>
+                        &lt/div><br/>
+                        &ltdiv><br/>
+                        &ltfieldset><br/>
+                        &ltlegend>Conhecimentos adquiridos no curso &lt/legend><br/>
+                        &ltinput type="checkbox" name="conhecimentos" id="conhecimento-1" value="1" /> &ltlabel for="conhecimento-1">HTML&lt/label> &ltbr><br/>
+                        &ltinput type="checkbox" name="conhecimentos" id="conhecimento-2" value="2" /> &ltlabel for="conhecimento-2">CSS&lt/label> &ltbr><br/>
+                        &ltinput type="checkbox" name="conhecimentos" id="conhecimento-3" value="3" /> &ltlabel for="conhecimento-3">JavaScript&lt/label> &ltbr><br/>
+                        &ltinput type="checkbox" name="conhecimentos" id="conhecimento-4" value="4" /> &ltlabel for="conhecimento-4">Python&lt/label> &ltbr><br/>
+                        &lt/fieldset><br/>
+                        &lt/div><br/>
+                        &ltdiv><br/>
+                        &ltfieldset><br/>
+                        &ltlegend>Tipos de carros&lt/legend><br/>
+                        &ltselect name="carros" id="carros"><br/>
+                        &ltoption value="hatch">Hatch&lt/option><br/>
+                        &ltoption value="sedan">Sedan&lt/option><br/>
+                        &ltoption value="suv">SUV&lt/option><br/>
+                        &ltoption value="importados">Importados&lt/option><br/>
+                        &lt/select><br/>
+                        &lt/fieldset><br/>
+                        &lt/div><br/>
+                        &lt/form><br/>
+                    </code>
+                    <p>
+                       <strong>Saída no navegador:</strong>
+                    </p>
+                    <div>
+                        <form action="" class="form2">
+                            <label for="resumo">Resumo:</label> <br>
+                            <textarea name="resumo" id="resumo" cols="30" rows="10"></textarea>
+                            <div>
+                            <fieldset>
+                            <legend>Faixas de idade </legend>
+                            <input type="radio" name="faixa-idade" id="faixa-idade-1"> <label for="faixa-idade-1">Idade entre 0 e 18 anos </label> <br>
+                            <input type="radio" name="faixa-idade" id="faixa-idade-2"> <label for="faixa-idade-2">Idade entre 19 e 34 anos </label> <br>
+                            <input type="radio" name="faixa-idade" id="faixa-idade-3"> <label for="faixa-idade-3">Idade entre 35 e 54 anos </label> <br>
+                            <input type="radio" name="faixa-idade" id="faixa-idade-4"> <label for="faixa-idade-4">Idade maior que 55 </label> <br>
+                            </fieldset>
+                            </div>
+                            <div>
+                            <fieldset>
+                            <legend>Conhecimentos adquiridos no curso </legend>
+                            <input type="checkbox" name="conhecimentos" id="conhecimento-1" value="1" /> <label for="conhecimento-1">HTML</label> <br>
+                            <input type="checkbox" name="conhecimentos" id="conhecimento-2" value="2" /> <label for="conhecimento-2">CSS</label> <br>
+                            <input type="checkbox" name="conhecimentos" id="conhecimento-3" value="3" /> <label for="conhecimento-3">JavaScript</label> <br>
+                            <input type="checkbox" name="conhecimentos" id="conhecimento-4" value="4" /> <label for="conhecimento-4">Python</label> <br>
+                            </fieldset>
+                            </div>
+                            <div>
+                            <fieldset>
+                            <legend>Tipos de carros</legend>
+                            <select name="carros" id="carros">
+                            <option value="hatch">Hatch</option>
+                            <option value="sedan">Sedan</option>
+                            <option value="suv">SUV</option>
+                            <option value="importados">Importados</option>
+                            </select>
+                            </fieldset>
+                            </div>                            
+                        </form>
+                    </div>
+            </div>
+        </main>
+</body>
+</html>

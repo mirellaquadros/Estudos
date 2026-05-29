@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicativos I</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header><h1>APLICATIVOS 1</h1></header>
+    <nav>
+        <ul>
+            <a href="index.html">Aula 1</a>
+            <a href="aula2.html">Aula 2</a>
+            <a href="aula3.html">Aula 3</a>
+            <a href="aula4.html">Aula 4</a>
+        </ul>
+
+        <main>
+            <div>
+                <h2>Lista Ordenadas</h2>
+                <p>
+                    <mark>&ltol> ... &lt/ol></mark> declara uma lista ordenada.<br/>
+                    <mark>&ltli> ... &lt/li></mark> declara um item da lista.
+                </p>
+                <h3>
+                    Exemplo:
+                </h3>
+                <p>
+                    <code>
+                        &lth4>Principais alimentos com proteína: &lt/h4><br/>
+                        &ltol><br/>
+                        &ltli>Carne bovina&lt/li><br/>
+                        &ltli>Frango&lt/li><br/>
+                        &ltli>Peixes&lt/li><br/>
+                        &ltli>Carne suína&lt/li><br/>
+                        &lt/ol>
+                    </code>
+                </p>
+                <p>
+                    Saída no navegador:
+                    <h4>Principais alimentos com proteína: </h4>
+                    <ol>
+                    <li>Carne bovina</li>
+                    <li>Frango</li>
+                    <li>Peixes</li>
+                    <li>Carne suína</li>
+                    </ol>
+                </p>
+            </div>
+            <div>
+                <h2>Listas não ordenadas</h2>
+                <p>
+                    <mark>&ltul> ... &lt/ul></mark> declara uma lista não ordenada (bastante usada para definir menus e
+                    submenus).<br/>
+                    <mark>&ltli> ... &lt/li></mark> declara um item da lista.<br/><br/>
+                    <mark>type</mark> é um atributo para definir o marcador (círculo, quadrado, flecha, etc.).
+                </p>
+                <h3>Exemplo:</h3>
+                <p>
+                    <code>
+                        &lth4>Listagem de bairros na região sul: &lt/h4><br/>
+                        &ltul><br/>
+                        &ltli>Jardim Primavera&lt/li><br/>
+                        &ltli>Vila Mariana&lt/li><br/>
+                        &ltli>Altos da Boa Vista&lt/li><br/>
+                        &ltli>Residencial dos Itamaratis&lt/li><br/>
+                        &ltli>Vila Carcará&lt/li><br/>
+                        &ltli>Parque Americano&lt/li><br/>
+                        &lt/ul><br/>
+                    </code>
+                </p>
+                <p>
+                    <strong>Saída no navegador:</strong>
+                </p>
+                <h4>Listagem de bairros na região sul: </h4>
+                    <ul>
+                        <li>Jardim Primavera</li>
+                        <li>Vila Mariana</li>
+                        <li>Altos da Boa Vista</li>
+                        <li>Residencial dos Itamaratis</li>
+                        <li>Vila Carcará</li>
+                        <li>Parque Americano</li>
+                    </ul>
+            </div>
+
+            <div>
+                <h2>Links</h2>
+                <p>
+                    <mark>&lta> ... &lt/a></mark> declara um hiperlink - conexão com uma outra página ou site web.<br/><br/>
+                    <mark>href:</mark> é usado para referenciar uma URL externa, arquivo ou local interno do site.<br/><br/>
+                    <mark>target:</mark> indica onde será carregada a página referenciada no link (href). Como valor,
+                    pode ser <span>_blank</span> (abre o endereço em nova janela), <span>_self</span> (normal/padrão), <span>_parent</span>
+                    (abre o endereço no frame pai), <sapan>_top</sapan> (abre o endereço em todo o corpo da janela),
+                    framename (abre o endereço no frame nomeado/especificado).
+                </p>
+                <h3>Exemplo:</h3>
+                <p>
+                    <code>
+                        &lta href="<span><u>https://www.tecmundo.com.br/</u></span>" target="_blank">Tecmundo - Descubra e
+                        aprenda sobre tecnologia&lt/a>
+                    </code>
+                </p>
+                <p>
+                    <strong>Saída no navegador:</strong>
+                </p>
+                <a href="https://www.tecmundo.com.br/" target="_blank">Tecmundo - Descubra e
+                aprenda sobre tecnologia</a>
+            </div>
+
+            <div>
+                <h2>Iframes</h2>
+                <p>
+                    &ltiframe> ... &lt/iframe> permite incluir na página HTML outra página em uma
+                    seção especificada. Para isso, possui os atributos:
+                    <ul>
+                        <li><span>src:</span> endereço do arquivo;</li><br/>
+                        <li><span>width:</span> largura do iframe;</li><br/>
+                        <li><span>height:</span> altura do iframe;</li><br/>
+                        <li><span>frameborder:</span> espessura da borda do iframe;</li><br/>
+                        <li><span>allowfullscreen:</span> permite o modo tela cheia;</li><br/>
+                        <li><span>allow:</span> permite outros recursos, como o accelerometer (sensor de
+                            movimento), autoplay (execução automática), geolocation (geolocalização),
+                            microphone (controle de microfone), entre outros.
+                        </li>
+                    </ul>
+                </p>
+                <h3>Exemplo:</h3>
+                <p>
+                    <code>
+                        &ltheader><br/>
+                            &lth2>Documento principal&lt/h2><br/>
+                        &lt/header><br/>
+                        &ltmain><br/>
+                            &ltiframe src="https://blog.betrybe.com/html/iframe-html/" width="500"<br/>
+                            height="200" frameborder="2"><br/>
+                        &lt/iframe><br/>
+                        &lt/main>
+                    </code>
+                </p>
+                <p>
+                    <strong></strong>
+                </p>
+                <header>
+                    <h2>Documento principal</h2>
+                </header>
+                <main>
+                    <iframe src="https://blog.betrybe.com/html/iframe-html/" width="500"
+                        height="200" frameborder="2">
+                    </iframe>
+                </main>
+            </div>
+        </main>
+    </nav>
+</body>
+<footer>
+    <h3>HTML</h3>
+</footer>
+</html>
