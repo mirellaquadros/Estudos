@@ -14,13 +14,14 @@
                 <a href="aula2.html">Aula 2</a>
                 <a href="aula3.html">Aula 3</a>
                 <a href="aula4.html">Aula 4</a>
+                <a href="CSS.html">CSS</a>
             </ul>
         </nav>
         <main>
-            <h1>AULA 1</h1>
+            <h1 class="html-t1">AULA 1</h1>
 
-                <div>
-                    <h2>HTML</h2>
+                <div class="html">
+                    <h2 class="html-t2">HTML</h2>
                     <p>HyperText Markup Language (linguagem de marcação de hipertexto). Hipertexto 
                         se refere aos links que conectam páginas web entre si, seja dentro de um 
                         único site ou fora dele. A marcação é usada para denotar textos, imagens e
@@ -31,8 +32,8 @@
                     </p>
                 </div>
 
-                <div>
-                    <h3>Estrutura Básica</h3>
+                <div class="html">
+                    <h3 class="html-t3">Estrutura Básica</h3>
                     <p>
                         <p>
                             <mark>&lt!DOCTYPE html&gt</mark> não é uma tag, mas sim uma declaração informando ao navegador
@@ -61,8 +62,8 @@
                     </p>
                 </div>
 
-                <div>
-                    <h3> HTML - Texto </h3>
+                <div class="html">
+                    <h3 class="html-t3"> HTML - Texto </h3>
                     <p>
                         <p>
                             <mark>&ltcode&gt ... &lt/code&gt</mark> indica que o texto é um código e altera sua formatação:<br/>
@@ -70,7 +71,7 @@
                             &ltcode&gt const aliquota = 20.00; &lt/code&gt<br/>
                         </p>
                         <p>
-                            Saída no navegador:<br/>
+                            <strong>Saída no navegador:</strong>
                         </p>
                         <p>
                             Em JavaScript, as constantes são declaradas usando a seguinte sintaxe:
@@ -82,10 +83,10 @@
                             </code>
                         </p>
                         <p>
-                        Saída no navegador:
+                            <strong>Saída no navegador:</strong>
                         </p>
                         <p>
-                        JavaScript é uma linguagem de programação interpretada utilizada na parte <mark>front end</mark> da aplicação web.<br/>
+                            JavaScript é uma linguagem de programação interpretada utilizada na parte <mark>front end</mark> da aplicação web.<br/>
                         </p>
                     </p>
                     <p>
@@ -97,7 +98,7 @@
                         Mas não é nada disso. Significa dizer não às centenas de outras boas ideias que existem. Você precisa
                         selecionar cuidadosamente.”&lt/blockquote&gt
                         </code>
-                        <p>Saída no navegador:</p>
+                        <p><strong>Saída no navegador:</strong></p>
                         <p>
                             <p>Segundo Steve Jobs ao falar com John Sculley, presidente da Pepsi antes de ser contratado pela
                             própria Apple: </p>
@@ -108,8 +109,8 @@
                     </p>
                 </div>
 
-                <div>
-                    <h3> HTML - Imagens </h3>
+                <div class="html">
+                    <h3 class="html-t3"> HTML - Imagens </h3>
                     <p>
                         <p>
                         <mark>&ltimg ... /&gt</mark> indica que o elemento é uma imagem. Possui os atributos src
@@ -127,7 +128,7 @@
                             a legenda da ilustração em questão.
                         </p>
                     </p>
-                    <h4>Exemplo:</h4>
+                    <h4 class="html-t4">Exemplo:</h4>
                     <p>
                         <code>
                         &ltfigure>
@@ -145,8 +146,8 @@
                     </figure>
                 </div>
 
-                <div>
-                    <h3>HTML - Audio e Vídeo</h3>
+                <div class="html">
+                    <h3 class="html-t3">HTML - Audio e Vídeo</h3>
                     <p>
                         <p>
                             <mark>&ltaudio> ... &lt/audio></mark> indica que o elemento é um áudio.
@@ -165,7 +166,7 @@
                             executado), controls (exibe a barra de controle), entre outros.
                         </p>
                     </p>
-                    <h4>Exemplo:</h4>
+                    <h4 class="html-t4">Exemplo:</h4>
                     <p>
                         <code>
                     
@@ -180,17 +181,19 @@
                     </p>
 
                     <p> Saída no navegador:</p>
+                    <div class="video">
                     <video width="300" height="200" controls="controls">
                     <source src="../imagens/GLG.mp4" type="video/mp4">
                     </video>
+                    </div>
                     <br/><br/>
                     <audio controls="controls">
                     <source src="../imagens/GLG.mp3" type="audio/mp3">
                     </audio>
                 </div>
 
-                <div>
-                    <h3> HTML - Blocos</h3>
+                <div class="html">
+                    <h3 class="html-t3"> HTML - Blocos</h3>
                     <p>
                         <p>
                             <mark>&ltsection> ... &lt/section></mark> dentro do conteúdo principal, compreende uma seção da página.
